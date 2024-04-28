@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    background-color: #c7b191;
+    display: grid;
+    grid-template-rows: 10% 82% 8%;
+    height: 120vh;
+    font-family: "Nunito", sans-serif;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    max-width: 670px;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 10px 10px 20px;
+}
+
+main .sapatoNovo {
+    width: 90%;
+    border-radius: 10px 0 0 10px;
+}
+
+main section {
+    padding: 15px 20px;
+}
+
+main section .tipo {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 12px;
+}
+
+main section p {
+    color: #595959;
+}
+
+h1 {
+    font-family: "Merriweather", serif;
+    margin: 10px 0;
+}
+
+main section .conteudo {
+    font-size: 18px;
+}
+
+main section .preco {
+    display: flex;
+    margin: 12px 0;
+    gap: 15px;
+    align-items: center;
+}
+
+main section .preco .forte {
+    color: #837053;
+    font-family: "Merriweather", serif;
+    font-size: 35px;
+}
+
+main section .preco .fraco {
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+main section a {
+    display: flex;
+    background-color: #837053;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    margin: 50px auto;
+    margin-bottom: 0;
+    width: 80%;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+main section a:hover {
+    background-color: #595959;
+    scale: 1.12;
+}
+
+main section a img {
+    width: 7%;
+}
+
+main section a p {
+    color: white;
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #595959;
+}

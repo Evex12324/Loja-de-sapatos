@@ -1,11 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+::-webkit-scrollbar {
+    background-color: white;
+    border: solid 1px #595959;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #837053;
+    border-radius: 15px;
+}
+
 body {
-    background-color: #c7b191;
     display: grid;
     grid-template-rows: 10% 82% 8%;
-    height: 120vh;
+    height: 130vh;
     font-family: "Nunito", sans-serif;
+    background: linear-gradient(150deg, #c7b191, #5f553c);
+    background-size: 150% 150%;
+    animation: gradient-animation 5s ease infinite;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    border: solid 1px #595959;
+}
+
+header .perfil {
+    width: 6%;
+    border-radius: 50%;
+}
+
+header .imagem {
+    display: flex;
+    align-items: center;
+}
+
+header .botoes {
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header .botoes a {
+    color: black;
+    padding: 10px 20px;
+    transition: 0.2s;
+}
+
+header .botoes a:hover {
+    background-color: #837053;
+    color: white;
+    border-radius: 25px;
 }
 
 main {
@@ -96,4 +147,20 @@ footer {
     justify-content: center;
     align-items: center;
     border: solid 1px #595959;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }

@@ -1,6 +1,7 @@
 # Loja de sapatos.
 
 ![Visualização do site Loja de sapatos](./github/capa-do-projeto.png)
+![Visualização do site Loja de sapatos](./github/capa-do-projeto-2.png)
 
 ## Bem-vindo! 👋
 Obrigado por ver meu projeto!
